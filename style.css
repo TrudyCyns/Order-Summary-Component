@@ -2,46 +2,79 @@
 
 /* Main Styles. */
 body {
-    font-family: 'Red Hat Display';
-    font-size: 16px;
-    background-color: hsl(225, 100%, 94%);
+  font-family: "Red Hat Display";
+  font-size: 16px;
+  background-color: hsl(225, 100%, 94%);
+  margin-top: 20px;
+}
+.container {
+width: 370px;
 }
 .card {
-    border-radius: 20px;
+  
+  border-radius: 20px;
 }
 .card-title {
-    font-weight: 900;
-    padding: 10px;
+  font-weight: 900;
+  padding: 10px;
 }
 .card-body {
-    text-align: center;
-    padding: 30px;
+  text-align: center;
+  padding: 30px;
 }
 .card-img-top {
-    border-radius: 20px 20px 0px 0px;
-    width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
 }
 #info-strip {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
 }
-#info-strip-inner {
-    width: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+#info-strip img {
+  margin-right: 2em;
+}
+#info-strip div {
+  margin-right: 4em;
+}
+#info-strip span {
+  font-weight: 700;
+}
+#change-link {
+  color: hsl(245, 75%, 52%);
+}
+.btn-primary {
+  background-color: hsl(245, 75%, 52%);
+}
+.btn {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 10px;
+  font-weight: 700;
+  border: 0px;
 }
 
+/* Active States */
+#change-link:hover, .btn:hover {
+    cursor: pointer;
+}
+#change-link:hover {
+    color: hsl(224, 23%, 55%);
+}
+.btn-primary:hover {
+    background-color: hsl(224, 23%, 55%);
+}
 
 /* Footer */
 .attribution {
-    font-size: 11px;
-    text-align: center;
+  font-size: 11px;
+  text-align: center;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+  color: hsl(228, 45%, 44%);
 }
